@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'includes/header.html' %}
+
+<div class="block pt-5 pb-5 pr-20 pl-20">
+
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Trusted by eCommerce Businesses</h2>
+      
+          <p class="mt-4 text-gray-500 sm:text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores laborum labore
+            provident impedit esse recusandae facere libero harum sequi.
+          </p>
+        </div>
+      
+        <dl class="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+            <dt class="order-last text-lg font-medium text-gray-500">Total Sales</dt>
+      
+            <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">$4.8m</dd>
+          </div>
+      
+          <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+            <dt class="order-last text-lg font-medium text-gray-500">Official Addons</dt>
+      
+            <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">24</dd>
+          </div>
+      
+          <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+            <dt class="order-last text-lg font-medium text-gray-500">Total Addons</dt>
+      
+            <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">86</dd>
+          </div>
+      
+          <div class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+            <dt class="order-last text-lg font-medium text-gray-500">Downloads</dt>
+      
+            <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">86k</dd>
+          </div>
+        </dl>
+      </div>
+
+</div>
+
+<div class="block pt-5 pb-5 pr-20 pl-20">
+    <!--
+Heads up! 👋
+
+This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+
+    <section
+    class="overflow-hidden bg-[url(https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2670&auto=format&fit=crop)] bg-cover bg-top bg-no-repeat"
+    >
+    <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="text-center ltr:sm:text-left rtl:sm:text-right">
+        <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Latest Shirts</h2>
+
+        <p class="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officia corporis quasi
+        doloribus iure architecto quae voluptatum beatae excepturi dolores.
+        </p>
+
+        <div class="mt-4 sm:mt-8">
+        <a
+            href="#"
+            class="inline-block rounded-full bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+        >
+            Get Yours Today
+        </a>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    
+</div>
+
+
+
+
+{% endblock content %}
+
+
+<h1>Bienvenido usuarios :</h1> {{request.user.full_name}}
+<br>
+<form action="{% url 'users_app:logout' %}" method="POST">{% csrf_token %}
+    <button type="submit">Cerrar Sesion</button>
+</form>
