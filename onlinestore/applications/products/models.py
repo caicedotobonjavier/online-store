@@ -49,4 +49,4 @@ class Product(TimeStampedModel):
         verbose_name_plural = 'Productos'
 
     def __str__(self):
-        return self.barcode + ' - ' + self.name
+        return self.name

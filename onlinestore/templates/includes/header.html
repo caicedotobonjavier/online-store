@@ -18,19 +18,23 @@
               <nav aria-label="Global">
                 <ul class="flex items-center gap-6 text-sm">
                   <li>
+                    <a class="text-gray-500 transition hover:text-gray-500/75" href="{% url 'home_app:index' %}"> Inicio </a>
+                  </li>
+
+                  <li>
                     <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Nosotros </a>
                   </li>
       
                   <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Productos </a>
-                  </li>
-      
+                    <a class="text-gray-500 transition hover:text-gray-500/75" href="{% url 'products_app:products'%}"> Productos </a>
+                  </li>    
+
                   <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Contacto </a>
+                    <a class="text-gray-500 transition hover:text-gray-500/75" href="{% url 'sale_app:list_car' %}"> Carrito(<b>{{count_products}}</b>) </a>
                   </li>
 
                   <li>
-                    <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Carrito() </a>
+                    <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Contacto </a>
                   </li>
       
                   <li>
@@ -48,12 +52,14 @@
               >
               Perfil: {{user.full_name}}
               </a>
-              <a
+              <form method="POST" action="{% url 'users_app:logout' %}">{% csrf_token %}
+              <button
                 class="rounded-md bg-teal-600 px-5 py-1.5 text-sm font-medium text-white shadow"
-                href="#"
+                type="submit"
               >
                 Logout
-              </a>
+              </button>
+            </form>
             </div>
             {% else %}
             <div class="flex items-center gap-4">              

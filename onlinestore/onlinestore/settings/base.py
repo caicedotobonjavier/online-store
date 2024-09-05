@@ -47,6 +47,7 @@ LOCAL_APPS = (
     'applications.users',
     'applications.home',
     'applications.products',
+    'applications.sale',
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -76,6 +77,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'applications.procesors.count_products',
             ],
         },
     },

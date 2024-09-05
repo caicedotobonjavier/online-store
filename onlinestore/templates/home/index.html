@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 {% include 'includes/header.html' %}
 
@@ -7,11 +9,11 @@
 
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div class="mx-auto max-w-3xl text-center">
-          <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Trusted by eCommerce Businesses</h2>
+          <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">La Mejor Tienda Online</h2>
       
           <p class="mt-4 text-gray-500 sm:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores laborum labore
-            provident impedit esse recusandae facere libero harum sequi.
+            Productos de las mejores marcas, precios favorables, buena atencion,
+            el mejor servicio al cliente para todos nuestros clientes.
           </p>
         </div>
       
@@ -52,23 +54,23 @@ This component comes with some `rtl` classes. Please remove them if they are not
 -->
 
     <section
-    class="overflow-hidden bg-[url(https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2670&auto=format&fit=crop)] bg-cover bg-top bg-no-repeat"
+    class="overflow-hidden bg-[url({% static 'img/portada.png' %})] bg-cover bg-top bg-no-repeat"
     >
     <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
     <div class="text-center ltr:sm:text-left rtl:sm:text-right">
-        <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Latest Shirts</h2>
+        <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Compra Ya</h2>
 
-        <p class="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officia corporis quasi
-        doloribus iure architecto quae voluptatum beatae excepturi dolores.
+        <p class="text-2xl font-bold text-white sm:text-3xl md:text-1xl">
+        Disfruta de todos nuestros productos, la mejor calidad, los mejores precios, y lo mejor
+        los llevamos hasta la puerta de tu casa.
         </p>
 
         <div class="mt-4 sm:mt-8">
         <a
-            href="#"
+            href="{% url 'products_app:products'%}"
             class="inline-block rounded-full bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
         >
-            Get Yours Today
+            Comprar
         </a>
         </div>
     </div>
@@ -79,13 +81,4 @@ This component comes with some `rtl` classes. Please remove them if they are not
 </div>
 
 
-
-
 {% endblock content %}
-
-
-<h1>Bienvenido usuarios :</h1> {{request.user.full_name}}
-<br>
-<form action="{% url 'users_app:logout' %}" method="POST">{% csrf_token %}
-    <button type="submit">Cerrar Sesion</button>
-</form>
