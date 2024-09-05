@@ -25,5 +25,5 @@ Este desarrollo tiene como fin practicar el como se desarrolla un sitio web para
 
 ## Autor
 
-| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Javier Caicedo Tobon</sub>](https://github.com/caicedotobonjavier)|
+| [<img src="https://avatars.githubusercontent.com/u/174378354?v=4" width=115><br><sub>Javier Caicedo Tobon</sub>](https://github.com/caicedotobonjavier)|
 | :---: |
