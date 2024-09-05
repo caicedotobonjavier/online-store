@@ -14,10 +14,16 @@ Este desarrollo tiene como fin practicar el como se desarrolla un sitio web para
 
 ## :hammer:Funcionalidades del proyecto
 
-- `Funcionalidad 1`: descripción de la funcionalidad 1
+- `Funcionalidad 1`: Registro de Usuario
 
 - `Funcionalidad 2`: descripción de la funcionalidad 2
 
 - `Funcionalidad 2a`: descripción de la funcionalidade 2a relacionada con la funcionalidad 2
 
 - `Funcionalidad 3`: descripción de la funcionalidad 3
+
+
+## Autores
+
+| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Javier Caicedo Tobon</sub>](https://github.com/caicedotobonjavier) |
+| :---: | :---: | :---: |
