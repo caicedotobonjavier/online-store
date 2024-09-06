@@ -75,8 +75,16 @@ Al realizar correctamente el login de usuario la aplicacion lo redireccionara a 
 
 
 
-- `Funcionalidad 9`: Pagina Carrito de Compas
+- `Funcionalidad 9`: Pagina Productos
 
+En esta pagina se podran ver todos los productos que se tienen disponibles, tendra cada uno de ellos la informacion del precion, su descripcion,
+y tendra el boton de agregar al carrito de compras. Ademas tendra el campo con su boton de buscar podructos por nombre.
+
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/productos.png" width=800>
+
+
+
+- `Funcionalidad 10`: Pagina Productos
 
 ## Autor
 
