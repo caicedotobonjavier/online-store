@@ -37,9 +37,17 @@ Luego de registrarse el usuario recibira en su correo registrado un codigo con l
 Luego de recibir el correo de registro la aplicaion lo redireccionara a el formulario de activacion de la cuenta, en esta se debera
 ingresar el codigo de activacion recibido por correo.
 
-<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/confirmacion_registro_form.png" width=800>
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/confirmacion_registro_form.png" width=500>
+
 
 - `Funcionalidad 5`: Login de usuario
+
+
+Al activar la cuenta, la aplicacion se redirecciona a el formulario del login de usuario.
+
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/login_form.png" width=500>
+
+
 
 - `Funcionalidad 6`: Confirmacion de login con codigo por correo electronico
 
