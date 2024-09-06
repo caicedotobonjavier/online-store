@@ -84,7 +84,14 @@ y tendra el boton de agregar al carrito de compras. Ademas tendra el campo con s
 
 
 
-- `Funcionalidad 10`: Pagina Productos
+- `Funcionalidad 10`: Pagina Carrito Compras
+
+Luego de estar en la pagina de productos y haber agregado al carrito, podemos pasar a ver los productos seleccionados, ver el valor a pagar, la
+cantidad de cada productos y el boton pagar para realizar la compra. Ademas podremos agregan o disminuir la cantidad de cada producto o eliminarlo.
+
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/carrito.png" width=800>
+
+
 
 ## Autor
 
