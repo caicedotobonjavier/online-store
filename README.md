@@ -57,7 +57,14 @@ Cada vez que un usuario realice un login, a su cuenta de correo registrada llega
 <img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/confirmacion_login.png" width=500>
 
 
-- `Funcionalidad 7`: Pagina del Home
+- `Funcionalidad 7`: Acceso a la aplicacion con el codigo de seguridad
+
+
+Luego de iniciar sesion la aplicacion redirige al usuario a un formulario que le pedira el codigo de inicio de sesion enviada al correo electronico.
+
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/confirmacion_acceso_form.png" width=500>
+
+
 
 - `Funcionalidad 8`: Pagina Productos
 

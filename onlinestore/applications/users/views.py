@@ -118,6 +118,7 @@ class VerifyLoginView(FormView):
     template_name = 'users/verify_login.html'
     form_class = VerifyUserForm
     success_url = reverse_lazy('home_app:index')
+    
 
     def get_form_kwargs(self):
         kwargs = super(VerifyLoginView, self).get_form_kwargs()
