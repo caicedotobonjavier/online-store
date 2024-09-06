@@ -51,6 +51,12 @@ Al activar la cuenta, la aplicacion se redirecciona a el formulario del login de
 
 - `Funcionalidad 6`: Confirmacion de login con codigo por correo electronico
 
+
+Cada vez que un usuario realice un login, a su cuenta de correo registrada llegara un correo de seguridad para iniciar sesion.
+
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/confirmacion_login.png" width=500>
+
+
 - `Funcionalidad 7`: Pagina del Home
 
 - `Funcionalidad 8`: Pagina Productos
