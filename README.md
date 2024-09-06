@@ -14,7 +14,9 @@ Este desarrollo tiene como fin practicar el como se desarrolla un sitio web para
 
 ## :hammer:Funcionalidades del proyecto
 
+
 - `Funcionalidad 1`: Registro de Usuario
+
 
 En este formulario el usuario podra registrarse con sus datos, ademas podra decidir si desea recibir correos de publicidad.
 
@@ -23,19 +25,29 @@ En este formulario el usuario podra registrarse con sus datos, ademas podra deci
 
 - `Funcionalidad 2`: Confirmacion de registro con codigo por correo electronico
 
+
 Luego de registrarse el usuario recibira en su correo registrado un codigo con la confirmacion del registro.
 
 <img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/confirmacion_registro.png" width=800>
 
-- `Funcionalidad 3`: Login de usuario
 
-- `Funcionalidad 4`: Confirmacion de login con codigo por correo electronico
+- `Funcionalidad 4`: Activacion de la cuenta
 
-- `Funcionalidad 4`: Pagina del Home
 
-- `Funcionalidad 4`: Pagina Productos
+Luego de recibir el correo de registro la aplicaion lo redireccionara a el formulario de activacion de la cuenta, en esta se debera
+ingresar el codigo de activacion recibido por correo.
 
-- `Funcionalidad 4`: Pagina Carrito de Compas
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/confirmacion_registro_form.png" width=800>
+
+- `Funcionalidad 5`: Login de usuario
+
+- `Funcionalidad 6`: Confirmacion de login con codigo por correo electronico
+
+- `Funcionalidad 7`: Pagina del Home
+
+- `Funcionalidad 8`: Pagina Productos
+
+- `Funcionalidad 9`: Pagina Carrito de Compas
 
 
 ## Autor
