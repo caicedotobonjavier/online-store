@@ -16,11 +16,17 @@ Este desarrollo tiene como fin practicar el como se desarrolla un sitio web para
 
 - `Funcionalidad 1`: Registro de Usuario
 
-- `Funcionalidad 2`: descripción de la funcionalidad 2
+- `Funcionalidad 2`: Confirmacion de registro con codigo por correo electronico
 
-- `Funcionalidad 2a`: descripción de la funcionalidade 2a relacionada con la funcionalidad 2
+- `Funcionalidad 3`: Login de usuario
 
-- `Funcionalidad 3`: descripción de la funcionalidad 3
+- `Funcionalidad 4`: Confirmacion de login con codigo por correo electronico
+
+- `Funcionalidad 4`: Pagina del Home
+
+- `Funcionalidad 4`: Pagina Productos
+
+- `Funcionalidad 4`: Pagina Carrito de Compas
 
 
 ## Autor
