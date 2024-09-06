@@ -23,6 +23,10 @@ En este formulario el usuario podra registrarse con sus datos, ademas podra deci
 
 - `Funcionalidad 2`: Confirmacion de registro con codigo por correo electronico
 
+Luego de registrarse el usuario recibira en su correo registrado un codigo con la confirmacion del registro.
+
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/confirmacion_registro.png" width=800>
+
 - `Funcionalidad 3`: Login de usuario
 
 - `Funcionalidad 4`: Confirmacion de login con codigo por correo electronico
