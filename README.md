@@ -66,7 +66,14 @@ Luego de iniciar sesion la aplicacion redirige al usuario a un formulario que le
 
 
 
-- `Funcionalidad 8`: Pagina Productos
+- `Funcionalidad 8`: Pagina Home
+
+
+Al realizar correctamente el login de usaurio la aplicacion lo redireccionara a la pagina principal.
+
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/home.png" width=800>
+
+
 
 - `Funcionalidad 9`: Pagina Carrito de Compas
 
