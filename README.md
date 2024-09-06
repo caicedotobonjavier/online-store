@@ -18,7 +18,9 @@ Este desarrollo tiene como fin practicar el como se desarrolla un sitio web para
 
 En este formulario el usuario podra registrarse con sus datos, ademas podra decidir si desea recibir correos de publicidad.
 
-.. image:: https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/register_form.png?raw=true
+.. image:: https://github.com/caicedotobonjavier/online-store/onlinestore/docs/confirmacion_acceso_form.png
+
+
 
 - `Funcionalidad 2`: Confirmacion de registro con codigo por correo electronico
 
