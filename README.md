@@ -16,6 +16,10 @@ Este desarrollo tiene como fin practicar el como se desarrolla un sitio web para
 
 - `Funcionalidad 1`: Registro de Usuario
 
+En este formulario el usuario podra registrarse con sus datos, ademas podra decidir si desea recibir correos de publicidad.
+
+.. image:: https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/register_form.png?raw=true
+
 - `Funcionalidad 2`: Confirmacion de registro con codigo por correo electronico
 
 - `Funcionalidad 3`: Login de usuario
