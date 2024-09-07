@@ -165,6 +165,7 @@ class UpdateInfoUser(UpdateView):
         return kwargs
 
     def form_valid(self, form):
+        
         new_contrasena = form.cleaned_data['new_password']
         usuario = self.request.user
         usuario.set_password(new_contrasena)
