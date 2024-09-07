@@ -96,6 +96,7 @@ descuento, la cantidad de cada productos y el boton pagar para realizar la compr
 - `Funcionalidad 10`: Pagina Actualizar Informacion Usuario
 
 La aplicacion tambien tendra una pagina para que el usuario pueda actualizar sus datos personales y la contraseña.
+El acceso sera dando clic en la parte de Perfil: Nombre de Usuario
 
 <img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/update_user.png" width=800>
 
