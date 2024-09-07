@@ -59,7 +59,9 @@ class ListProductCarShop(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(ListProductCarShop, self).get_context_data(**kwargs)
-        context['total'] = CarShop.objects.total(self.request.user)
+        context['sub_total'] = CarShop.objects.total(self.request.user)
+        context['descuento'] = CarShop.objects.descuento(self.request.user)
+        context['total'] = round(context['sub_total'] - context['descuento'], 2)
         return context
     
 

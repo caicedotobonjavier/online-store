@@ -11,6 +11,7 @@ class ProductAdmin(admin.ModelAdmin):
         'description',
         'purchase_price',
         'sale_price',
+        'discount',
         'provider',
         'marca',
         'image',

@@ -14,6 +14,7 @@ class Sale(TimeStampedModel):
     date_sale = models.DateField('Fecha de Fecha')
     amount = models.DecimalField('Monto de la compra', max_digits=10, decimal_places=2)
     count = models.PositiveIntegerField('Cantidad de productos')
+    discount = models.DecimalField('Descuento', max_digits=4, decimal_places=2, default=0)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='sale_user', on_delete=models.CASCADE)
 
     class Meta:
@@ -28,6 +29,7 @@ class Sale(TimeStampedModel):
 class SaleDetail(TimeStampedModel):
     sale = models.ForeignKey(Sale, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    discount = models.DecimalField('Descuento Producto', max_digits=3, decimal_places=2, default=0)
     count = models.PositiveIntegerField('Cantidad')
     purchase_price = models.DecimalField('Precio Compra', max_digits=5, decimal_places=2)
     sale_price = models.DecimalField('Precio Venta', max_digits=5, decimal_places=2)

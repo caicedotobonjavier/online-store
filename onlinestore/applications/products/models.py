@@ -43,6 +43,8 @@ class Product(TimeStampedModel):
     image = models.ImageField('Imagen', upload_to='products', null=True, blank=True)
     stock = models.IntegerField('Stock', default=0)
     num_sale = models.PositiveIntegerField('Veces Vendido', default=0)
+    discount = models.DecimalField('Descuento', max_digits=3, decimal_places=2, default=0)
+
 
     class Meta:
         verbose_name = 'Producto'
@@ -50,3 +52,6 @@ class Product(TimeStampedModel):
 
     def __str__(self):
         return self.name
+    
+    def get_descuento(self):
+        return round(self.discount * 100)

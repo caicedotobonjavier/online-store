@@ -61,7 +61,7 @@
             <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {% for p in all_products%}
                 <li>
-                    <a href="#-/" class="group relative block overflow-hidden">
+                    <a href="{% url 'products_app:detail_product' p.id %}" class="group relative block overflow-hidden">
                         <button
                         class="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
                         >
@@ -93,7 +93,13 @@
                         <!-- con este campo le puedo agregar la etiqueta nuevo
                             <span class="whitespace-nowrap bg-yellow-400 px-3 py-1.5 text-xs font-medium"> New </span>
                         -->
-                    
+                        {% if p.discount > 0 %}
+                        <span class="whitespace-nowrap bg-yellow-400 px-1 py-1 text-xs font-xs"> Descuento {{p.get_descuento}} %</span>
+                        {% else %}
+                        <span class="whitespace-nowrap bg-white-400 px-3 py-1.5 text-xs font-medium"> </span>
+
+                        {% endif %}
+
                         <h3 class="mt-4 text-lg font-medium text-gray-900">{{p.name}}</h3>
                     
                         <p class="mt-1.5 text-sm text-gray-700">${{p.sale_price}}</p>

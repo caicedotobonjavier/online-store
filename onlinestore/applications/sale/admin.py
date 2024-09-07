@@ -10,6 +10,7 @@ class SaleAdmin(admin.ModelAdmin):
         'date_sale',
         'amount',
         'count',
+        'discount',
         'user',
     )
 
@@ -24,6 +25,7 @@ class SaleDetailAdmin(admin.ModelAdmin):
         'count',
         'purchase_price',
         'sale_price',
+        'discount',
     )
 
 

@@ -16,6 +16,7 @@ def make_purchase(self, **dates):
 
         monto = 0
         cantidad = 0
+        descuento = 0
 
         lista_productos = []
         productos_vendidos = []
@@ -26,10 +27,12 @@ def make_purchase(self, **dates):
                 product = producto.product,
                 count = producto.count,
                 purchase_price = producto.product.purchase_price,
-                sale_price = producto.product.sale_price
+                sale_price = producto.product.sale_price,
+                discount = producto.product.discount * producto.product.sale_price
             )
             lista_productos.append(detalle)
-
+            #
+            descuento += producto.product.discount * producto.product.sale_price
             #
             vendidos = producto.product
             vendidos.stock -= producto.count
@@ -51,6 +54,7 @@ def make_purchase(self, **dates):
 
         venta.amount = monto
         venta.count = cantidad
+        venta.discount = descuento
         venta.save()        
 
         CarShop.objects.filter(user=dates['user']).delete()
