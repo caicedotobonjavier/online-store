@@ -80,7 +80,7 @@ Al realizar correctamente el login de usuario la aplicacion lo redireccionara a 
 En esta pagina se podran ver todos los productos que se tienen disponibles, tendra cada uno de ellos la informacion del precio, su descripcion,
 descuento y tendra el boton de agregar al carrito de compras. Ademas tendra el campo con su boton de buscar podructos por nombre.
 
-<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/productos.png" width=800>
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/productos_1.png" width=800>
 
 
 
@@ -89,7 +89,7 @@ descuento y tendra el boton de agregar al carrito de compras. Ademas tendra el c
 Luego de estar en la pagina de productos y haber agregado al carrito, podemos pasar a ver los productos seleccionados, ver el valor a pagar, el
 descuento, la cantidad de cada productos y el boton pagar para realizar la compra. Ademas podremos agregan o disminuir la cantidad de cada producto o eliminarlo.
 
-<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/carrito.png" width=800>
+<img src="https://github.com/caicedotobonjavier/online-store/blob/main/onlinestore/docs/carrito_1.png" width=800>
 
 
 
