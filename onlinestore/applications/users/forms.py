@@ -191,3 +191,99 @@ class VerifyUserForm(forms.Form):
             raise forms.ValidationError('Código incorrecto')
 
         return access_code
+
+
+
+class UpdateInfoUserForm(forms.ModelForm):
+
+    password = forms.CharField(
+        required=False,
+        label='Password',
+        widget=forms.PasswordInput(
+            attrs={
+                'placeholder':'Contraseña Actual',
+                'class': 'mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm',
+                'type' : 'password',                
+            }
+        )
+    )
+
+    new_password = forms.CharField(
+        required=False,
+        label='Confirm Password',
+        widget=forms.PasswordInput(
+            attrs={
+                'placeholder':'Nueva Contraseña',                
+                'class': 'mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm',
+                'type' : 'password', 
+            }
+        )
+    )
+    class Meta:
+        model = User
+        fields = (
+            'email',
+            'full_name',
+            'date_birth',
+            'address',
+            'phone',
+            'marketingaccept',
+        )
+
+        widgets = {
+            'email': forms.EmailInput(
+                attrs={
+                    'placeholder':'Ingrese email',
+                    'type':'email',
+                    'class' : 'mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm'
+                }
+            ),
+            'full_name': forms.TextInput(
+                attrs={
+                    'placeholder':'Ingrese nombre completo',
+                    'class': 'mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm',                    
+                }
+            ),
+            'date_birth': forms.DateInput(
+                attrs={
+                    'placeholder':'Ingrese fecha de nacimiento',
+                    'type':'date'
+                }
+            ),
+            'address': forms.TextInput(
+                attrs={
+                    'placeholder':'Ingrese dirección',
+                    'class': 'mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm',  
+                }
+            ),
+            'phone': forms.TextInput(
+                attrs={
+                    'placeholder':'Ingrese teléfono'
+                }
+            ),
+
+            'marketingaccept' : forms.CheckboxInput(
+                attrs={
+                    'class': 'size-5 rounded-md border-gray-200 bg-white shadow-sm',
+                    'type' : 'checkbox',
+                    'value' : '1'
+                }
+            )
+        }
+    
+    def __init__(self, pk, *args, **kwargs):     
+        self.user = pk
+        super(UpdateInfoUserForm, self).__init__(*args, **kwargs)
+
+    
+    def clean_password(self):
+        dato = self.user
+        usuario = User.objects.get(id=dato)
+        password = self.cleaned_data['password']
+
+        user = authenticate(email=self.cleaned_data['email'], password=password)
+
+        if not user:
+            raise forms.ValidationError('Contraseña actual incorrecta')
+
+        return password

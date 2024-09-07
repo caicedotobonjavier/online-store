@@ -10,5 +10,6 @@ urlpatterns = [
     path('activate/<pk>/', views.ActivateUserView.as_view(), name='activate'),
     path('login/', views.LoginView.as_view(), name='login'),  
     path('verify-user/<pk>/', views.VerifyLoginView.as_view(), name='verify'),
-    path('logout/', views.UserLogoutView.as_view(), name='logout'),   
+    path('logout/', views.UserLogoutView.as_view(), name='logout'),
+    path('update-info-user/<pk>/', views.UpdateInfoUser.as_view(), name='update_info'),      
 ]

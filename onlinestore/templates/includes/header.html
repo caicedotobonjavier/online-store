@@ -48,7 +48,7 @@
             <div class="flex items-center gap-4">  
               <a
                 class="rounded-md bg-gray-100 px-5 py-1.5 text-sm font-medium text-teal-600"
-                href="#"
+                href="{% url 'users_app:update_info' user.id %}"
               >
               Perfil: {{user.full_name}}
               </a>

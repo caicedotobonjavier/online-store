@@ -2,7 +2,7 @@ from django.shortcuts import render
 #
 from .models import User
 #
-from .forms import UserForm, LoginUserForm, ActivateUserForm, VerifyUserForm
+from .forms import UserForm, LoginUserForm, ActivateUserForm, VerifyUserForm, UpdateInfoUserForm
 #
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView, FormView, View
 #
@@ -140,8 +140,6 @@ class VerifyLoginView(FormView):
 
 
 
-
-
 class UserLogoutView(View):
     
     def post(self, request, *args, **kwargs):
@@ -153,3 +151,29 @@ class UserLogoutView(View):
             )
         )
 
+
+
+class UpdateInfoUser(UpdateView):
+    template_name = 'users/update_user.html'
+    form_class = UpdateInfoUserForm
+    model = User
+
+
+    def get_form_kwargs(self):
+        kwargs = super(UpdateInfoUser, self).get_form_kwargs()
+        kwargs.update({'pk': self.kwargs['pk']})
+        return kwargs
+
+    def form_valid(self, form):
+        new_contrasena = form.cleaned_data['new_password']
+        usuario = self.request.user
+        usuario.set_password(new_contrasena)
+        usuario.save()
+        logout(self.request)
+
+        return HttpResponseRedirect(
+            reverse(
+                'users_app:login'
+            )
+        )
+        
